@@ -9,3 +9,5 @@ COPY target/maSuperAppJava-1.0-SNAPSHOT.jar app.jar
 
 # Étape 4 : Définis la commande à exécuter dans le conteneur
 ENTRYPOINT ["java", "-cp", "app.jar", "com.maventdd.app.App"]
+
+# Trigger Build
