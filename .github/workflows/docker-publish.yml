@@ -23,11 +23,9 @@ jobs:
           distribution: "temurin"
 
       - name: Build JAR with Maven
-        working-directory: ./maSuperAppJava
         run: mvn clean package
 
       - name: Build Docker image
-        working-directory: ./maSuperAppJava
         run: docker build -t ghcr.io/eniosaf/masuperappjava:latest .
 
       - name: Log in to GitHub Container Registry
